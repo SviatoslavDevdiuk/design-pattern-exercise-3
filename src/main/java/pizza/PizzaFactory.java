@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PizzaFactory {
 
-    public Pizza create(PizzaType pizzaType, String pizzaName) {
+    public Pizza create(PizzaType pizzaType) {
         if (pizzaType.equals(PizzaType.CALCONE)) {
             return new CalconePizza(25, new ArrayList<String>());
         } else if (pizzaType.equals(PizzaType.HAWAI)) {

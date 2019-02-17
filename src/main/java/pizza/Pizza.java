@@ -2,11 +2,12 @@ package pizza;
 
 import java.util.List;
 
-public class Pizza {
-    private double cost;
-    private List<String> components;
+public abstract class Pizza {
+    protected double cost;
+    protected List<String> components;
 
     public Pizza() {
+
     }
 
     public double getCost() {
@@ -25,7 +26,5 @@ public class Pizza {
         this.components = components;
     }
 
-    public void showPizzaInfo() {
-        System.out.println(this.toString());
-    }
+    public abstract void showPizzaInfo();
 }
