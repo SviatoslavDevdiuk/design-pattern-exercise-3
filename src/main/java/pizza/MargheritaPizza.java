@@ -3,7 +3,7 @@ package pizza;
 import java.util.Arrays;
 import java.util.List;
 
-public class MargheritaPizza {
+public class MargheritaPizza extends Pizza {
     private double cost;
     private List<String> components;
 
@@ -28,7 +28,7 @@ public class MargheritaPizza {
         this.components = components;
     }
 
-    public void showPizzaInfo(){
+    public void showPizzaInfo() {
         System.out.println(this.toString());
     }
 
